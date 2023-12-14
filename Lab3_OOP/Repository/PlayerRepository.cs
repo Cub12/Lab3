@@ -52,16 +52,4 @@ public class PlayerRepository: IPlayerRepository
             player.CurrentRating = newRating;
         }
     }
-    
-    /*public decimal CalculateWinPoints(int playerId, decimal changeOfRating)
-    {
-        var player = _players.FirstOrDefault(p => p.Id == playerId);
-        return player?.CalculateWinPoints(changeOfRating) ?? 0;
-    }
-
-    public decimal CalculateLosePoints(int playerId, decimal changeOfRating)
-    {
-        var player = _players.FirstOrDefault(p => p.Id == playerId);
-        return player?.CalculateLosePoints(changeOfRating) ?? 0;
-    }*/
 }

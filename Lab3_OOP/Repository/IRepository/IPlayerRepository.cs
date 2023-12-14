@@ -12,6 +12,4 @@ public interface IPlayerRepository
     IEnumerable<PlayerEntity> ReadAccounts();
     PlayerEntity ReadAccountById(int playerId);
     void UpdateRating(int playerId, decimal newRating);
-    /*decimal CalculateWinPoints(int playerId, decimal changeOfRating);
-    decimal CalculateLosePoints(int playerId, decimal changeOfRating);*/
 }

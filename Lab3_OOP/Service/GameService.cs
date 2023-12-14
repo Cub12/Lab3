@@ -41,52 +41,6 @@ public class GameService: IGameService
         return _playerRepository.ReadAccounts();
     }
     
-    /*public decimal CalculateWinPoints(int playerId, decimal changeOfRating)
-    {
-        PlayerEntity player = _playerRepository.ReadAccountById(playerId);
-        
-        if (player != null)
-        {
-            //return player.CalculateWinPoints(changeOfRating);
-            
-            if (player.GameAccount is not WinningStreakGameAccount) return changeOfRating;
-        
-            _consecutiveWins++;
-            if (_consecutiveWins >= 3)
-            {
-                return changeOfRating + 100;
-            }
-        
-            return changeOfRating;
-        }
-        
-        return 0;
-    }
-
-    public decimal CalculateLosePoints(int playerId, decimal changeOfRating)
-    {
-        PlayerEntity player = _playerRepository.ReadAccountById(playerId);
-        
-        if (player != null)
-        {
-            //return player.CalculateLosePoints(changeOfRating);
-            
-            switch (player.GameAccount)
-            {
-                case ReducedLossGameAccount:
-                    return changeOfRating / 2;
-            
-                case WinningStreakGameAccount:
-                    _consecutiveWins = 0;
-                    break;
-            }
-
-            return changeOfRating;
-        }
-        
-        return 0;
-    }*/
-    
     public bool IsPlayerWinner(int playerId, int gameId)
     {
         GameEntity game = _gameRepository.ReadGameById(gameId);

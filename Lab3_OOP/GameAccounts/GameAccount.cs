@@ -15,14 +15,4 @@ public abstract class GameAccount
         UserName = name;
         CurrentRating = rating;
     }
-
-    /*protected virtual decimal CalculateWinPoints(decimal changeOfRating)
-    {
-        return changeOfRating;
-    }
-
-    protected virtual decimal CalculateLosePoints(decimal changeOfRating)
-    {
-        return changeOfRating;
-    }*/
 }
